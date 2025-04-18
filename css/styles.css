@@ -6,12 +6,9 @@ Table Of Contents:
 - Navigation
 - Header
 - About
-- Services
-- Details
+- Education
+- Skills
 - Projects
-- Works
-- Testimonials
-- Questions
 - Contact
 - Footer 
 - Copyright
@@ -28,7 +25,6 @@ Colors:
 - Headings text - black #24262a
 - Body text - dark gray #4d5055
 ******************************************/
-
 
 /**************************/
 /*     General Styles     */
@@ -380,8 +376,8 @@ input[type='checkbox'] {
 }
 
 .navbar .navbar-brand {
-	padding-top: 0.125rem;
-	padding-bottom: 0.125rem;
+	padding-top: 0.135rem;
+	padding-bottom: 0.135rem;
 }
 
 .navbar .logo-image img {
@@ -521,7 +517,8 @@ input[type='checkbox'] {
 .header {
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.jpg') center center no-repeat;
+	/* background-color: #24262a; */
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/hero-background4.jpg') center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -580,7 +577,7 @@ input[type='checkbox'] {
 
 
 /********************/
-/*     Services     */
+/*     Education     */
 /********************/
 .basic-2 {
 	padding-top: 7.75rem;
@@ -620,8 +617,8 @@ input[type='checkbox'] {
 /*******************/
 .split .area-1 {
 	height: 430px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/details-background.jpg') center center no-repeat;
-	background-size: cover;
+	background: url('../images/hero-background.jpeg') center center no-repeat;
+	background-size: contain;
 }
 
 .split .area-2 {
@@ -725,111 +722,6 @@ input[type='checkbox'] {
 /* end of hover animation */
 
 
-/************************/
-/*     Testimonials     */
-/************************/
-.cards-1 {
-	padding-top: 3rem;
-	padding-bottom: 3.875rem;
-}
-
-.cards-1 .h2-heading {
-	margin-bottom: 3rem;
-	text-align: center;
-}
-
-.cards-1 .card {
-	margin-bottom: 4rem;
-	border: none;
-}
-
-.cards-1 .card-body {
-	padding: 0;
-	text-align: center;
-}
-
-.cards-1 .testimonial-text {
-	margin-bottom: 1.625rem;
-}
-
-.cards-1 img {
-	display: inline-block;
-	width: 60px;
-	margin-bottom: 0.875rem;
-	border-radius: 50%;
-}
-
-.cards-1 .text {
-	margin-top: 0.375rem;
-}
-
-.cards-1 .testimonial-author {
-	color: #24262a;
-}
-
-.cards-1 .testimonial-author,
-.cards-1 .occupation {
-	font-size: 0.875rem;
-	line-height: 1.375rem;
-}
-
-
-/*********************/
-/*     Questions     */
-/*********************/
-.accordion-1 {
-	padding-top: 7.75rem;
-	padding-bottom: 6.75rem;
-}
-
-.accordion-1 .h2-heading {
-	margin-bottom: 2.5rem;
-	text-align: center;
-}
-
-.accordion-1 .card {
-	margin-bottom: 1.75rem;
-	border: none;
-}
-
-.accordion-1 .card-header {
-	padding: 0;
-	border: none;
-	background-color: transparent;
-}
-
-.accordion-1 .card button {
-	padding: 0;
-	color: #24262a;
-	font-weight: 600;
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-	font-family: 'Poppins';
-}
-
-.accordion-1 .card button:hover {
-	text-decoration: none;
-}
-
-.accordion-1 .card button:before {
-	float: left;
-	margin-right: 0.625rem;
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 900;
-	content: "\f078";
-	transition: all 0.2s;
-}
-
-.accordion-1 .card button.collapsed:before {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg);
-} 
-
-.accordion-1 .card-body {
-	padding: 0.75rem 1.5rem 0.5rem 1.5rem;
-}
-
 
 /*******************/
 /*     Contact     */
@@ -856,7 +748,8 @@ input[type='checkbox'] {
 .footer {
 	padding-top: 6.25rem;
 	padding-bottom: 2rem;
-	background-color: #24262a;
+	/* background-color: #24262a; */
+	background-color: black;
 	text-align: center;
 }
 
@@ -896,7 +789,8 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	background-color: #24262a;
+	/* background-color: #24262a; */
+	background-color: black;
 	text-align: center;
 }
 
@@ -997,9 +891,16 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 11rem;
-		padding-bottom: 9rem;
+		padding-top: 5rem;
+		padding-bottom: 4rem;
 	}
+	header .container{
+		display: flex;
+		align-items: center;
+	}
+	.header .text-container{
+		width: 350px;
+  }
 	/* end of header */
 
 
@@ -1103,16 +1004,20 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 15rem;
-		padding-bottom: 14rem;
+		padding-top: 9rem;
+		padding-bottom: 8rem;
 		text-align: left;
 	}
+	.header .text-container{
+		width: 500px;
+  }
 	/* end of header */
 
 
 	/* Details */
 	.split {
 		height: 760px;
+		display: flex;
 	}
 	
 	.split .area-1 {
@@ -1133,46 +1038,6 @@ a:hover.back-to-top {
 		margin-left: 3rem;
 	}
 	/* end of details */
-
-
-	/* Testimonials */
-	.cards-1 .card {
-		display: inline-block;
-		width: 290px;
-		vertical-align: top;
-	}
-
-	.cards-1 .card:nth-of-type(3n+2) {
-		margin-right: 1.5rem;
-		margin-left: 1.5rem;
-	}
-
-	.cards-1 .card-body {
-		text-align: left;
-	}
-
-	.cards-1 .details {
-		display: flex;
-		align-items: flex-start;
-	}
-	
-	.cards-1 .details .text {
-		flex-direction: column;
-	}
-	
-	.cards-1 .details img {
-		margin-right: 1.125rem;
-	}
-	/* end of testimonials */
-
-
-	/* Accordion */
-	.accordion-1 .accordion {
-		width: 730px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of accordion */
 
 
 	/* Contact */
@@ -1220,8 +1085,11 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 18.25rem;
-		padding-bottom: 17.25rem;
+		padding-top: 8.25rem;
+		padding-bottom: 7.25rem;
+	}
+	.header .text-container{
+          width: 600px;
 	}
 	/* end of header */
 
@@ -1253,17 +1121,6 @@ a:hover.back-to-top {
 	}
 	/* end of details */
 
-
-	/* Testimonials */
-	.cards-1 .card {
-		width: 338px;
-	}
-	
-	.cards-1 .card:nth-of-type(3n+2) {
-		margin-right: 2.625rem;
-		margin-left: 2.625rem;
-	}
-	/* end of testimonials */
 	
 
 	/* Extra Pages */
